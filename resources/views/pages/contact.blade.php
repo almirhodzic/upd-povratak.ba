@@ -41,7 +41,7 @@
                      </svg>
                   <h2 class="font-semibold mb-3">Kontaktirajte nas</h2>
                   <p class="text-center justify-center">U koliko zelite stupiti sa nama u kontakt ispunite slijedecu formu i kliknite na "Posalji poruku".</p>
-                  <p class="mt-5"><small>Polja u formi sa zvjezdicon (*) obavezno ispuniti.</small></p>
+                  <p class="mt-5"><small>Polja u formi sa zvjezdicom (*) obavezno ispuniti.</small></p>
                </div>
                <div class="flex flex-col">
                   @include('form.contact.write')

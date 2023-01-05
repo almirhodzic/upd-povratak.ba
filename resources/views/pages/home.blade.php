@@ -23,7 +23,7 @@
    <!-- Hero -->
    <div class="relative overflow-hidden mb-5">
       <div class="my-5">
-         <div style="background-image: url('{{asset('static/assets/img/penzioneri/domino.jpg')}}')" class="w-full object-cover h-96 bg-no-repeat bg-center bg-cover rounded-md"></div>
+         <div style="background-image: url('{{asset('static/assets/img/penzioneri/sretni.jpg')}}')" class="w-full object-cover h-96 bg-no-repeat bg-center bg-cover rounded-md"></div>
       </div>
    </div>
    <!-- End Hero -->
