@@ -90,6 +90,7 @@
                            Predsjednik Udruzenja:
                         </h3>
                         <p>Ramić Osman</p>
+                         <p>Tel. +41 76 322 89 23 (CH)</p>
                      </div>
 
                   </div>
