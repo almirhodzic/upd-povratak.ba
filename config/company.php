@@ -8,7 +8,7 @@
         |--------------------------------------------------------------------------
         */
         'logourl' => 'https://cdn.upd-povratak.ba/assets/img/logo-upd.povratak.ba.png',
-        'association' => 'Udruženje penzionera dijaspore',
+        'association' => 'Udruženje penzionera dijaspore ',
         'namefull' => 'Udruženje penzionera dijaspore "POVRATAK"',
         'street' => 'Ulica Žrtava Genocida u Srebrenici',
         'postcode' => '75260',
