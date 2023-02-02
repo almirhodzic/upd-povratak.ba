@@ -55,7 +55,7 @@
                <div class="flex">
                   <div class="ml-5">
                      <h3 class="group-hover:text-blue-600 text-xl font-semibold text-gray-800 dark:group-hover:text-gray-400 dark:text-gray-200 mb-3">
-                        59A: Korisnički racun:
+                        59A: Korisnički račun:
                      </h3>
                      <p>UDRUZENJE PENZIONERA DIJASPORE POVRATAK</p>
                      <p>ZRTAVA GENOCIDA U SREBRENICI BB</p>
