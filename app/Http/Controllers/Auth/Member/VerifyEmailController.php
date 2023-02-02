@@ -54,7 +54,7 @@
                     $fromEmail = Config::get('company.mail-sender');
                     $toName = 'Sekretariat '.Config::get('app.name');
                     $toEmail = Config::get('company.mail-office');
-                    $subject = "Novi zahtjev za Članstvo ".Config::get('app.name');
+                    $subject = "Zahtjev za Članstvo ".Config::get('app.name')." (".$verifyMember->member->id.")";
                     $apptimezone = Config::get('app.timezone');
 
                     $data = array(
