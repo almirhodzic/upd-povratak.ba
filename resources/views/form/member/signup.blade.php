@@ -54,7 +54,7 @@
       </div>
       <div class="ml-1">
          <label for="accept-statut" class="dark:text-white @error('accept-statut') text-red-500 @enderror">Prihvatam <a href="{{ asset('static/assets/files/Statut-UPD-Povratak.pdf') }}" class="link" target="_blank">
-               Statut, viziju i ciljeve</a> Udruženja
+               Statut</a>, viziju i ciljeve Udruženja
          </label>
       </div>
    </div>@error('accept-statut')<div class="text-sm mt-2 px-1 py-0.5 bg-red-500 text-white font-light rounded"><span>{{ $message }}</span></div>@enderror
