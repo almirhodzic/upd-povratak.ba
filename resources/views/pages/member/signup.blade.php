@@ -3,12 +3,12 @@
 @section('content')
    <!-- Page Heading -->
    <x-partials.header>
-      <x-slot name="currentpagename">Forma za Clanstvo</x-slot>
+      <x-slot name="currentpagename">Forma za Članstvo</x-slot>
       <x-slot name="headertitle">
-         <span class="whitespace-nowrap">Clan Udruzenja</span>
+         <span class="whitespace-nowrap">Član Udruženja</span>
       </x-slot>
       <x-slot name="headertitlesub">
-         Zahtjev za članstvo {{ config('app.name') }}
+         Zahtjev za Članstvo {{ config('app.name') }}
       </x-slot>
    </x-partials.header>
    <!-- End Page Heading -->

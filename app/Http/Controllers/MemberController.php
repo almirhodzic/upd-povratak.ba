@@ -70,14 +70,14 @@ class MemberController extends Controller
                 'token' => $token
             ]);
 
-            // MEAIL
+            // EMAIL
             // ------------------------------------------------------
 
             $fromName = $request->name;
             $fromEmail = Config::get('company.mail-sender');
             $toName = $request->name;
             $toEmail = $request->email;
-            $subject = "Aktivacija korisničkog računa ".Config::get('app.name');
+            $subject = "Vaš zahtjev za Članstvo ".Config::get('app.name');
 
             $data = array(
                 'member_name' => $request->name,
@@ -95,7 +95,7 @@ class MemberController extends Controller
             });
 
             // ------------------------------------------------------
-            // MEAIL END
+            // EMAIL END
 
             sleep(0.5);
 

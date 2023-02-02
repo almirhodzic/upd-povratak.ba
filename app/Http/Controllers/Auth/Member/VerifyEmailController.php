@@ -33,6 +33,61 @@
                     $message = "Vaša eMail adresa je uspješno aktivirana!";
                     $status = 'success';
 
+                    // EMAIL
+                    // ------------------------------------------------------
+                    /*$memberId = $verifyMember->id;
+                    $memberName = $verifyMember->name;
+                    $memberStreet = $verifyMember->street;
+                    $memberPostcode = $verifyMember->postcode;
+                    $memberCity = $verifyMember->city;
+                    $memberCanton = $verifyMember->canton;
+                    $memberCountry = $verifyMember->country;
+                    $memberPhone = $verifyMember->phone;
+                    $memberPhoneDijsaspora = $verifyMember->phone_dijaspora;
+                    $memberEmail = $verifyMember->email;
+                    $memberCreatedAt = $verifyMember->created_at;
+                    $memberVerifiedAt = $verifyMember->email_verified_at;
+                    $memberIp = $verifyMember->ip;
+                    $memberMessage = $verifyMember->message;*/
+
+                    $fromName = Config::get('app.name');
+                    $fromEmail = Config::get('company.mail-sender');
+                    $toName = 'Sekretariat '.Config::get('app.name');
+                    $toEmail = Config::get('company.mail-office');
+                    $subject = "Novi zahtjev za Članstvo ".Config::get('app.name');
+                    $apptimezone = Config::get('app.timezone');
+
+                    $data = array(
+                        'appname' => Config::get('app.name'),
+                        'appurl' => Config::get('app.url'),
+                        'logourl' => Config::get('company.logourl'),
+                        'memberId' => $verifyMember->member->id,
+                        'memberName' => $verifyMember->member->name,
+                        'memberStreet' => $verifyMember->member->street,
+                        'memberPostcode' => $verifyMember->member->postcode,
+                        'memberCity' => $verifyMember->member->city,
+                        'memberCanton' => $verifyMember->member->canton,
+                        'memberCountry' => $verifyMember->member->country,
+                        'memberPhone' => $verifyMember->member->phone,
+                        'memberPhoneDijsaspora' => $verifyMember->member->phone_dijaspora,
+                        'memberEmail' => $verifyMember->member->email,
+                        'memberCreatedAt' => $verifyMember->member->created_at,
+                        'memberVerifiedAt' => $verifyMember->member->email_verified_at,
+                        'memberIp' => $verifyMember->member->ip,
+                        'memberMessage' => $verifyMember->member->message,
+                        'timezone' => $apptimezone
+                    );
+
+
+                    Mail::send('emails.notify.member.request-html', $data, function($message) use ($toEmail, $toName, $fromEmail, $fromName, $subject){
+                        $message->from($fromEmail, $fromName);
+                        $message->to($toEmail, $toName);
+                        $message->subject($subject);
+                    });
+
+
+                    // ------------------------------------------------------
+                    // EMAIL END
 
                 } else {
                     $message = "Vaša eMail adresa već je verifikovana.";

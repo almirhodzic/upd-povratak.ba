@@ -16,11 +16,11 @@
         'country-s' => 'BiH',
         'country-l' => 'Bosna i Hercegovina',
 
-        'mail-bcc' => 'mediacode@gmail.com',
-        'mail-office' => 'mediacode@gmail.com',
-        'mail-sender' => 'noreply@upd-povratak.ba',
+        'mail-bcc' => env('APP_MAIL_BCC', 'mediacode@gmail.com'),
+        'mail-office' => env('APP_MAIL_OFFICE', 'mediacode@gmail.com'),
+        'mail-sender' => env('APP_MAIL_SENDER', 'noreply@upd-povratak.ba'),
 
-        'annual-fee' => '6000', // in cents
+        'annual-fee' => '6000', // In cents
         'currency' => 'KM',
 
 

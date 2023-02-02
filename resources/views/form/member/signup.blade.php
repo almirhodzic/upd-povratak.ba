@@ -39,8 +39,8 @@
 
    <div class="mb-5">
       <label for="phone-dijaspora" class="sr-only">Telefon / Mobitel (u dijaspori)</label>
-      <input type="text" name="phone-dijaspora" id="phone-dijaspora" class="form-control basic-input @error('phone-dijaspora') border border-red-500 @enderror" placeholder="Telefon / Mobitel (u dijaspori)" value="{{ old('phone-dijaspora') }}">
-      @error('phone-dijaspora')<div class="error-label">{{ $message }}</div>@enderror
+      <input type="text" name="phone_dijaspora" id="phone_dijaspora" class="form-control basic-input @error('phone_dijaspora') border border-red-500 @enderror" placeholder="Telefon / Mobitel (u dijaspori)" value="{{ old('phone_dijaspora') }}">
+      @error('phone_dijaspora')<div class="error-label">{{ $message }}</div>@enderror
    </div>
    <div class="mb-3">
       <label for="message" class="sr-only">Poruka (opcijonalno)</label>
@@ -50,9 +50,9 @@
 
    <div class="flex items-center">
       <div class="flex">
-         <input id="accept-statut" name="accept-statut" type="checkbox" class="form-control basic-checkbox @error('accept-statut') shadow hadow-red-600 shadow-xl s mr-1 border border-2 border-red-500 @enderror" {{ (! empty(old('accept-statut')) ? 'checked' : '') }}>
+         <input id="accept-statut" name="accept-statut" type="checkbox" class="form-control basic-checkbox @error('accept-statut') shadow hadow-red-600 shadow-xl s border border-2 border-red-500 @enderror" {{ (! empty(old('accept-statut')) ? 'checked' : '') }}>
       </div>
-      <div class="ml-1">
+      <div class="ml-2">
          <label for="accept-statut" class="dark:text-white @error('accept-statut') text-red-500 @enderror">Prihvatam <a href="{{ asset('static/assets/files/Statut-UPD-Povratak.pdf') }}" class="link" target="_blank">
                Statut</a>, viziju i ciljeve Udruženja
          </label>

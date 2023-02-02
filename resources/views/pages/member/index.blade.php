@@ -8,18 +8,18 @@
          <span class="whitespace-nowrap">Članstvo</span>
       </x-slot>
       <x-slot name="headertitlesub">
-         Članstvo {{ config('app.name') }} Udruženja
+         Zahtjev za Članstvo {{ config('app.name') }} Udruženja
       </x-slot>
    </x-partials.header>
    <!-- End Page Heading -->
 
    <main>
       <div class="mb-8">
-         <h2 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-5">Koji su benefiti Članstva {{ config('app.name') }} Udruženja?</h2>
+         <h2 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-5">Koji su benefiti Članstva?</h2>
          @include('form.member.benefits')
       </div>
       <p class="p-space">
-         Kliknite na slijedeći link kako bi podnijeli zahtjev za Članstvo {{ config('app.name') }} Udruženja.
+         Kliknite na link da podnesete zahtjev.
       </p>
 
          <button class="btn btn-indigo mb-3" onClick="window.location = '{{ route('member.signup') }}'">

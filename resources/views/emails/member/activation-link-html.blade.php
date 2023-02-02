@@ -9,10 +9,13 @@
       <td colspan="2" height="15"></td>
    </tr>
    <tr>
-      <td colspan="2"><b>{{ $appname }}</b><br>Aktivacijski Link za Članstvo</td>
+      <td colspan="2"><b>{{ $appname }}</b><br>Verfikacijski link za Članstvo</td>
    </tr>
    <tr>
       <td colspan="2"><hr></td>
+   </tr>
+   <tr>
+       <td colspan="2">Poštovani/a, uspješno ste podnijeli Zahtjev za Članstvo {{ $appname }}. Da bi se pokrenuo proces, potrebno je da verificirate Vašu eMail adresu. Kliknite na link ispod u ovoj poruci.<br>Zahtjevi bez verifikacije se neće uzimati u obzir.<br><br></td>
    </tr>
    <tr>
       <td valign="top" width="100">Datum</td>
@@ -30,8 +33,14 @@
       <td colspan="2"><hr></td>
    </tr>
    <tr>
-      <td valign="top">Aktivacijski link</td>
-      <td valign="top"><a href="{{ route('member.verifyemail', $token) }}">Potvrdi eMail adresu</a></td>
+      <td valign="top">Verfikacijski link</td>
+      <td valign="top"><a href="{{ route('member.verifyemail', $token) }}">Kliknite ovde</a></td>
+   </tr>
+   <tr>
+       <td colspan="2"><hr></td>
+   </tr>
+   <tr>
+       <td colspan="2">Na ovu poruku ne možete odgovoriti. Ako imate pitanja u vezi Članstva ili želite stupiti sa nama u kontakt posjetite <a href="{{ $appurl }}/contact">našu web stranicu</a> gdje će te naći mogućnosti uspostavljanje kontakta sa nama.<br><br>{{ $appname }}</td>
    </tr>
    </tbody>
 </table>
