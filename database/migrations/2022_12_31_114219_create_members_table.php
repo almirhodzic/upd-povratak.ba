@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('postcode');
             $table->string('city');
             $table->string('canton')->nullable();
-            $table->string('country')->default('BH');
+            $table->string('country')->default('BiH');
             $table->string('phone')->nullable();
             $table->string('email')->unique();
             $table->string('is_email_verified')->default(0);

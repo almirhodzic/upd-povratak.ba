@@ -40,7 +40,7 @@
        <td colspan="2"><hr></td>
    </tr>
    <tr>
-       <td colspan="2">Na ovu poruku ne možete odgovoriti. Ako imate pitanja u vezi Članstva ili želite stupiti sa nama u kontakt posjetite <a href="{{ $appurl }}/contact">našu web stranicu</a> gdje će te naći mogućnosti uspostavljanje kontakta sa nama.<br><br>{{ $appname }}</td>
+       <td colspan="2">Na ovu poruku ne možete odgovoriti. Ako imate pitanja u vezi Članstva ili želite stupiti sa nama u kontakt posjetite <a href="{{ $appurl }}/contact">našu web stranicu</a> gdje će te naći mogućnosti uspostavljanje kontakta.<br><br>{{ $appname }}</td>
    </tr>
    </tbody>
 </table>
