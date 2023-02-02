@@ -87,7 +87,7 @@
                         <p>ID-broj: 4210525740004<br><small>(Identifikacioni broj poslovnog subjekta)</small></p>
 
                         <h3 class="mt-4 group-hover:text-blue-600 font-semibold text-gray-800 dark:group-hover:text-gray-400 dark:text-gray-200">
-                           Predsjednik Udruzenja:
+                           Predsjednik Udruženja:
                         </h3>
                         <p>Ramić Osman</p>
                          <p>Tel. +41 76 322 89 23 (CH)</p>
