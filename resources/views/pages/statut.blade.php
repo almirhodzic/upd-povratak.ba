@@ -18,7 +18,7 @@
          Na slijedecem linku mozete snimiti Statut {{ config('app.name') }} Udruzenja kao PDF-Fajl.
       </p>
       <p class="p-space">
-         Kliknite na slijedeci link i snimite Fajl na Vas racunar ili mobitel.
+         Kliknite na "Statut download" i snimite Fajl na Vas racunar ili mobitel.
       </p>
 
          <button class="btn btn-indigo mb-3" onClick="window.open('{{ asset('static/assets/files/Statut-UPD-Povratak.pdf') }}','_blank')">

@@ -15,7 +15,7 @@
         <ul class="space-y-1.5">
             <li><a class="navi-item {{ Route::is('home.index') ? 'active': '' }}" href="{{ route('home.index') }}">Pocetna</a></li>
             <li><a class="navi-item {{ Route::is('statut.index') ? 'active': '' }}" href="{{ route('statut.index') }}">Statut</a></li>
-            <li><a class="navi-item {{ Route::is('bank.index') ? 'active': '' }}" href="{{ route('bank.index') }}">Uplate</a></li>
+            <li><a class="navi-item {{ Route::is('bank.index') ? 'active': '' }}" href="{{ route('bank.index') }}">Bankovni racun</a></li>
             <li><a class="navi-item {{ Route::is('contact.index') ? 'active': '' }}" href="{{ route('contact.index') }}">Kontakt</a></li>
             <li><a class="navi-item {{ Route::is('member.index') || Route::is('member.signup') ? 'active': '' }}" href="{{ route('member.index') }}">Clanstvo</a></li>
         </ul>

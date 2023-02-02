@@ -28,7 +28,7 @@
    </div>
    <!-- End Hero -->
    <p>
-      {{ config('company.namefull') }} je osnovano datuma 04.08.2022. godine.
+      {{ config('company.namefull') }} je osnovano 04.08.2022. godine.
    </p>
    </main>
 @endsection
