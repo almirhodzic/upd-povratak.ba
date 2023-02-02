@@ -15,7 +15,7 @@
 
    <main id="content">
       <p>
-         {{ config('company.namefull') }} je dobrovoljna, socijalno-humanitarna nevladina i vanstranačka organizacija u kojoj članovi ostvaruju zajedničke interese i potrebe kao: zaštita prava penzionera dijaspore, jačanje veza između Udruženja i dijaspore, saradnju sa lokalnom upravom i drugim Udruženjima gdje postoji zajednički interes, zatim zajednička druženja, putovanja, banjska liječenja, humanitare aktivnosti i slično. Udruženje će poduzimati i aktivnosti u zbrinjavanju svojih članova u staračke domove i učestvovati u izgradnji istih u skladu sa svojim mogućnostima.
+         {{ config('company.namefull') }} je dobrovoljna, socijalno-humanitarna nevladina i vanstranačka organizacija u kojoj članovi ostvaruju zajedničke interese i potrebe kao: zaštita prava penzionera dijaspore, jačanje veza između Udruženja i dijaspore, saradnju sa lokalnom upravom i drugim Udruženjima gdje postoji zajednički interes, zatim zajednička druženja, putovanja, banjska liječenja, humanitare aktivnosti i slično. Udruženje će pomagati u zbrinjavanju svojih članova u domove za stara lica i učestvovati u izgradnji istih u skladu sa svojim mogućnostima.
       </p>
       <p class="mt-5">
          Udruzenje se finansira clanarinom svojih clanova, donacijama, projektima, grantovima i slicno.
