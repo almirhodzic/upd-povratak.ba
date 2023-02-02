@@ -68,7 +68,7 @@
                         <h3 class="group-hover:text-blue-600 font-semibold text-gray-800 dark:group-hover:text-gray-400 dark:text-gray-200">
                            Sjedište {{ config('app.name') }}
                         </h3>
-                        <p>{{ config('company.namefull') }}</p>
+                        <p>{{ config('company.namefull') }}.</p>
                         <p>{{ config('company.street') }}</p>
                         <p>{{ config('company.postcode') }} {{ config('company.city') }}</p>
                         <p>{{ config('company.country-l') }}</p>

@@ -9,7 +9,7 @@
       <td colspan="2" height="15"></td>
    </tr>
    <tr>
-      <td colspan="2"><b>{{ $appname }}</b><br>Aktivacijski Link za Clanstvo</td>
+      <td colspan="2"><b>{{ $appname }}</b><br>Aktivacijski Link za Članstvo</td>
    </tr>
    <tr>
       <td colspan="2"><hr></td>

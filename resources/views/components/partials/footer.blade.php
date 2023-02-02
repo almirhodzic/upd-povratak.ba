@@ -55,7 +55,7 @@
               </a>
             </div>
             <p class="mt-3 text-sm text-gray-400">
-                Periodno primanje novosti i aktivnosti {{ config('app.name') }} Udruženja putem elektronkse poste (eMail). Pretplata je besplatna i moze se deaktivirati bilo koje vrijeme.
+                Periodno primanje novosti i aktivnosti {{ config('app.name') }} Udruženja putem elektronkse poste (eMail). Pretplata je besplatna i može se deaktivirati u bilo koje vrijeme.
             </p>
           </form>
         </div>

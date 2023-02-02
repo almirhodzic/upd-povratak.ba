@@ -9,7 +9,7 @@
         <td colspan="2" height="15"></td>
     </tr>
     <tr>
-        <td colspan="2">Novi Clan <b>{{ $appname }}</b></td>
+        <td colspan="2">Novi Član <b>{{ $appname }}</b></td>
     </tr>
     <tr>
         <td colspan="2"><hr></td>
@@ -25,13 +25,6 @@
     <tr>
         <td valign="top">eMail adresa</td>
         <td valign="top">{{ $member_email }}</td>
-    </tr>
-    <tr>
-        <td colspan="2"><hr></td>
-    </tr>
-    <tr>
-        <td valign="top">Aktivacijski link</td>
-        <td valign="top">Potvrdi eMail adresu</a></td>
     </tr>
     </tbody>
 </table>
