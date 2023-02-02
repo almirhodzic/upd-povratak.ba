@@ -3,7 +3,7 @@
 @section('content')
    <!-- Page Heading -->
    <x-partials.header>
-      <x-slot name="currentpagename">Dobrodosli</x-slot>
+      <x-slot name="currentpagename">Dobrodošli</x-slot>
       <x-slot name="headertitle">
          <span class="whitespace-nowrap">IME PREZIME</span>
       </x-slot>
@@ -15,7 +15,7 @@
 
    <main id="content">
       <p>
-         Dobrodosli USER
+         Dobrodošli USER
       </p>
    </main>
 @endsection

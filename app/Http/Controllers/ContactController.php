@@ -23,8 +23,8 @@ class ContactController extends Controller
         ],
             [
             'name.required' => 'Ime i prezime obavezno unijeti.',
-            'email.required' => 'Mail adresa obavezno unijeti.',
-            'email.email' => 'Mail adresa nije validna.',
+            'email.required' => 'eMail adresu obavezno unijeti.',
+            'email.email' => 'eMail adresa nije validna.',
             'message.required' => 'Napišite par riječi ili poruku.',
         ]);
 

@@ -8,8 +8,8 @@
         |--------------------------------------------------------------------------
         */
         'logourl' => 'https://cdn.upd-povratak.ba/assets/img/logo-upd.povratak.ba.png',
-        'association' => 'Udruzenje penzionera dijaspore',
-        'namefull' => 'Udruzenje penzionera dijaspore "POVRATAK"',
+        'association' => 'Udruženje penzionera dijaspore',
+        'namefull' => 'Udruženje penzionera dijaspore "POVRATAK"',
         'street' => 'Ulica Žrtava Genocida u Srebrenici',
         'postcode' => '75260',
         'city' => 'Kalesija',

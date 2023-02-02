@@ -17,7 +17,7 @@
     'resources/js/app.js'
     ])
 </head>
-<body class="bg-white dark:bg-slate-900 debug-screens">
+<body class="bg-white dark:bg-slate-900">
 <!-- ========== MAIN CONTENT ========== -->
 
 <!-- Sidebar Toggle -->

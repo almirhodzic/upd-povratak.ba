@@ -5,7 +5,7 @@
    <x-partials.header>
       <x-slot name="currentpagename">Verifikacija</x-slot>
       <x-slot name="headertitle">
-         <span class="whitespace-nowrap">Clanstvo {{ config('app.name') }}</span>
+         <span class="whitespace-nowrap">Članstvo {{ config('app.name') }}</span>
       </x-slot>
       <x-slot name="headertitlesub">
          Verifikacija eMail adrese
@@ -40,7 +40,7 @@
                </x-slot>
                <x-slot name="resulmessage">
                   <h3 class="text-xl mb-2 text-rose-700 dark:text-gray-200">{{ $message }}</h3>
-                  <p class="text-rose-700 dark:text-gray-200 p-space">Ukoliko smatrate da je ovo greska obratite nam se putem <a href="{{ route('contact.index') }}" class="link">Kontakt-forme.</a></p>
+                  <p class="text-rose-700 dark:text-gray-200 p-space">Ukoliko smatrate da je ovo greška obratite nam se putem <a href="{{ route('contact.index') }}" class="link">Kontakt-forme.</a></p>
                </x-slot>
 
             @else
@@ -52,12 +52,12 @@
                </x-slot>
                <x-slot name="resulmessage">
                   <h3 class="text-xl mb-2 text-green-700 dark:text-gray-200">{{ $message }}</h3>
-                  <p class="p-space">Zahtjev za Clanstvo je, nakog verifikacije eMail-adrese, u toku. Obraticemo Vam se putem maila ili postom sto prije.</p>
-                  <p class="p-space">Hvala za Vas interes prema nasem Udruzenju.</p>
+                  <p class="p-space">Zahtjev za Članstvo je, nakog verifikacije eMail-adrese, u toku. Obratićemo Vam se putem maila ili poštom sto prije.</p>
+                  <p class="p-space">Hvala za Vas interes prema našem Udruženju.</p>
                </x-slot>
             @endif
          </x-result-messages.w-full>
       @endisset
-      <div class="">Dalje na <a href="{{ route('home.index') }}" class="link">pocetnu stranicu</a>.</div>
+      <div class="">Dalje na <a href="{{ route('home.index') }}" class="link">početnu stranicu</a>.</div>
    </main>
 @endsection

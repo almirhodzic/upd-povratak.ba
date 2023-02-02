@@ -40,7 +40,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
                      </svg>
                   <h2 class="font-semibold mb-3">Kontaktirajte nas</h2>
-                  <p class="text-center justify-center">U koliko zelite stupiti sa nama u kontakt ispunite slijedecu formu i kliknite na "Posalji poruku".</p>
+                  <p class="text-center justify-center">U koliko želite stupiti sa nama u kontakt ispunite slijedeću formu i kliknite na "Pošalji poruku".</p>
                   <p class="mt-5"><small>Polja u formi sa zvjezdicom (*) obavezno ispuniti.</small></p>
                </div>
                <div class="flex flex-col">
@@ -54,7 +54,7 @@
 
          <!-- Cards -->
          <div class="text-xl font-bold mb-5">
-            <h2>Kontakt-informacije {{ config('app.name') }} Udruzenja</h2>
+            <h2>Kontakt-informacije {{ config('app.name') }} Udruženja</h2>
          </div>
          <div class="grid 2xl:grid-cols-2 gap-3 2xl:gap-6 mb-3 2xl:mb-6">
             <div class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800" href="javascript:void(0)">
@@ -66,7 +66,7 @@
 
                      <div class="ml-5">
                         <h3 class="group-hover:text-blue-600 font-semibold text-gray-800 dark:group-hover:text-gray-400 dark:text-gray-200">
-                           Sjediste {{ config('app.name') }}
+                           Sjedište {{ config('app.name') }}
                         </h3>
                         <p>{{ config('company.namefull') }}</p>
                         <p>{{ config('company.street') }}</p>
@@ -82,14 +82,14 @@
                         </p>
 
                         <h3 class="mt-4 group-hover:text-blue-600 font-semibold text-gray-800 dark:group-hover:text-gray-400 dark:text-gray-200">
-                           Obavjestenje:
+                           Obavještenje:
                         </h3>
                         <p>ID-broj: 4210525740004<br><small>(Identifikacioni broj poslovnog subjekta)</small></p>
 
                         <h3 class="mt-4 group-hover:text-blue-600 font-semibold text-gray-800 dark:group-hover:text-gray-400 dark:text-gray-200">
                            Predsjednik Udruzenja:
                         </h3>
-                        <p>Ramic Osman</p>
+                        <p>Ramić Osman</p>
                      </div>
 
                   </div>
@@ -104,7 +104,7 @@
 
                      <div class="ml-5">
                         <h3 class="group-hover:text-blue-600 font-semibold text-gray-800 dark:group-hover:text-gray-400 dark:text-gray-200">
-                           Kancelarija za Dijasporu Opcina Kalesija
+                           Kancelarija za Dijasporu Općina Kalesija
                         </h3>
                         <p>Majdančić Nihada</p>
                         <p>Tel. +387 35 367 735</p>

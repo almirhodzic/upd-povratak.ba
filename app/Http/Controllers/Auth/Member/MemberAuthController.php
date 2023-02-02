@@ -53,7 +53,7 @@
                     ->withSuccess('You have Successfully loggedin');
             }*/
 
-            return redirect("login")->withSuccess('Oppes! You have entered invalid credentials');
+            return redirect("login")->withSuccess('Unijeli ste pogrešne podatke');
         }
 
         /**
@@ -63,7 +63,7 @@
          */
         public function postRegistration(Request $request)
         {
-            return redirect("dashboard")->withSuccess('Great! You have Successfully loggedin');
+            return redirect("dashboard")->withSuccess('Prijavljeni ste');
         }
 
         /**
@@ -77,7 +77,7 @@
                 return view('dashboard');
             }*/
 
-            return redirect("login")->withSuccess('Opps! You do not have access');
+            return redirect("login")->withSuccess('Pristup ovoj stranici nije dozvoljen');
         }
 
         /**

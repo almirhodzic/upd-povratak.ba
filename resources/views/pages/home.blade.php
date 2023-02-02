@@ -3,7 +3,7 @@
 @section('content')
    <!-- Page Heading -->
    <x-partials.header>
-      <x-slot name="currentpagename">Pocetna stranica</x-slot>
+      <x-slot name="currentpagename">Početna stranica</x-slot>
       <x-slot name="headertitle">
          <span class="whitespace-nowrap">Dobrodošli na</span> <span class="whitespace-nowrap text-indigo-500">{{ config('app.name') }}</span>
       </x-slot>
@@ -15,10 +15,10 @@
 
    <main id="content">
       <p>
-         {{ config('company.namefull') }} je dobrovoljna, socijalno-humanitarna nevladina i vanstranačka organizacija u kojoj članovi ostvaruju zajedničke interese i potrebe kao: zaštita prava penzionera dijaspore, jačanje veza između Udruženja i dijaspore, saradnju sa lokalnom upravom i drugim Udruženjima gdje postoji zajednički interes, zatim zajednička druženja, putovanja, banjska liječenja, humanitare aktivnosti i slično. Udruženje će pomagati u zbrinjavanju svojih članova u domove za stara lica i učestvovati u izgradnji istih u skladu sa svojim mogućnostima.
+         {{ config('company.namefull') }} je dobrovoljna, socijalno-humanitarna nevladina i vanstranačka organizacija u kojoj članovi ostvaruju zajedničke interese i potrebe kao: zaštita prava penzionera dijaspore, jačanje veza između Udruženja i dijaspore, saradnju sa lokalnom upravom i drugim Udruženjima gdje postoji zajednički interes, zatim zajednička druženja, putovanja, banjska liječenja, humanitarne aktivnosti i slično. Udruženje će pomagati u zbrinjavanju svojih članova u domove za stara lica i učestvovati u izgradnji istih u skladu sa svojim mogućnostima.
       </p>
       <p class="mt-5">
-         Udruzenje se finansira clanarinom svojih clanova, donacijama, projektima, grantovima i slicno.
+         Udruženje se finansira članarinom svojih članova, donacijama, projektima, grantovima i slično.
       </p>
    <!-- Hero -->
    <div class="relative overflow-hidden mb-5">

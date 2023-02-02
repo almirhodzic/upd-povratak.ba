@@ -8,7 +8,7 @@
          <span class="whitespace-nowrap">Clan Udruzenja</span>
       </x-slot>
       <x-slot name="headertitlesub">
-         Zahtjev za clanstvo {{ config('app.name') }}
+         Zahtjev za članstvo {{ config('app.name') }}
       </x-slot>
    </x-partials.header>
    <!-- End Page Heading -->
@@ -28,7 +28,7 @@
                   <div class="ml-3">
                      <p class="text-green-600 dark:text-gray-400">
                      <p class="p-space">Poštovani/a {{ session('name') }}</p>
-                     <p class="p-space">Uspjesno ste poslali Zahtjev za Clanstvo {{ config('app.name') }} Udruzenje. Otvorite Vas INBOX ({{ session('email') }}) na koji smo poslali verifikacijski link, kliknite na link da bi verificirali Vasu eMail adresu.</p>
+                     <p class="p-space">Uspješno ste poslali Zahtjev za Članstvo {{ config('app.name') }} Udruženje. Otvorite Vas INBOX ({{ session('email') }}) na koji smo poslali verifikacijski link, kliknite na link da bi verificirali Vašu eMail adresu.</p>
                      <p class="mb-6">U koliko imate pitanja u vezi Verifikacije javite name se preko <a href="{{ route('contact.index') }}" class="link">Kontakt-forme</a>.</p>
                   </div>
                </div>
@@ -38,7 +38,7 @@
                <div class="flex flex-col">
                   <div>
                      <p class="mb-5 md:text-lg text-gray-800 dark:text-gray-200">
-                        Popunite formu i kliknite na "Posalji zahtjev". Nakon toga primicete eMail kao potvrdu istog i slijedit Link u mailu.
+                        Popunite formu i kliknite na "Pošalji zahtjev". Nakon toga primićete eMail kao potvrdu istog i slijedit Link u mailu.
                      </p>
                      <!--FormMember -->
                      <div class="flex flex-col">

@@ -5,7 +5,7 @@
    <x-partials.header>
       <x-slot name="currentpagename">Uplate</x-slot>
       <x-slot name="headertitle">
-         <span class="whitespace-nowrap">Bankovni racun</span>
+         <span class="whitespace-nowrap">Bankovni račun</span>
       </x-slot>
       <x-slot name="headertitlesub">
          Informacije vezano za uplate
@@ -15,7 +15,7 @@
 
    <main id="content">
       <p class="p-space">
-         Preuzmite informacije vezano za bankovni racun (uplate) {{ config('app.name') }} Udruzenja.
+         Preuzmite informacije vezano za bankovni račun (uplate) {{ config('app.name') }} Udruženja.
       </p>
       <div class="grid 2xl:grid-cols-2 gap-3 2xl:gap-6 mb-3 2xl:mb-6">
          <a class="group flex flex-col bg-white hover:bg-indigo-50 border hover:border-indigo-200 shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800" href="javascript:void(0)">

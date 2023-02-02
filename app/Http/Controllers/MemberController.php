@@ -37,16 +37,16 @@ class MemberController extends Controller
             [
                 'name.required' => 'Ime i prezime obavezno unijeti.',
                 'street.required' => 'Ulicu i broj (BiH) obavezno unijeti.',
-                'postcode.required' => 'Opcinski broj (BiH) obavezno unijeti.',
-                'city.required' => 'Opcinu (BiH) obavezno unijeti.',
-                'email.required' => 'eMail adresa obavezno unijeti.',
+                'postcode.required' => 'Poštanski broj (BiH) obavezno unijeti.',
+                'city.required' => 'Općinu (BiH) obavezno unijeti.',
+                'email.required' => 'eMail adresu obavezno unijeti.',
                 'email.email' => 'eMail adresa nije validna.',
-                'email.unique' => 'Unesena eMail adresa je vec registrovana.',
+                'email.unique' => 'Unešena eMail adresa je već registrovana.',
                 'phone.required' => 'Telefon / Mobitel (BiH) obavezno unijeti.',
-                'message.sometimes' => 'Napišite sometimes.',
+                'message.sometimes' => 'Napišite nešto.',
                 'message.min' => 'Napišite najmanje :min slova.',
                 'message.regex' => 'Samo slova i brojevi dozvoljeno',
-                'accept-statut.accepted' => 'Da bi nastavili sa Zahjtevom trebate prihvatiti Statut Udruzenja',
+                'accept-statut.accepted' => 'Da bi nastavili sa Zahjtevom trebate prihvatiti Statut Udruženja',
             ]);
 
         if($validatedData)
@@ -77,7 +77,7 @@ class MemberController extends Controller
             $fromEmail = Config::get('company.mail-sender');
             $toName = $request->name;
             $toEmail = $request->email;
-            $subject = "Aktivacija koriscnikog racuna ".Config::get('app.name');
+            $subject = "Aktivacija korisničkog računa ".Config::get('app.name');
 
             $data = array(
                 'member_name' => $request->name,

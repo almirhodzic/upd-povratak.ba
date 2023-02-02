@@ -30,12 +30,12 @@
                     $verifyMember->member->active = 1;
                     $verifyMember->member->save();
 
-                    $message = "Vasa eMail adresa je uspjesno aktivirana!";
+                    $message = "Vaša eMail adresa je uspješno aktivirana!";
                     $status = 'success';
 
 
                 } else {
-                    $message = "Vasa eMail adresa vec je verifikovana.";
+                    $message = "Vaša eMail adresa već je verifikovana.";
                     $status = 'verified';
                 }
             }
