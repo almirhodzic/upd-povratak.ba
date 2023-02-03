@@ -9,6 +9,8 @@ use App\Http\Controllers\BankController;
 use App\Http\Controllers\MemberController;
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\Auth\Member\VerifyEmailController;
+use App\Http\Controllers\Auth\Account\VerifyAccountController;
+use App\Http\Controllers\MarketingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,7 +36,9 @@ use App\Http\Controllers\Auth\Member\VerifyEmailController;
     Route::get('/member-signup', [MemberController::class, 'signup'])->name('member.signup');
     Route::post('/member-store', [MemberController::class, 'store'])->name('member.store');
     Route::get('/member/verify/{token}', [VerifyEmailController::class, 'verifyemail'])->name('member.verifyemail');
+    Route::get('/account/verify/{token}', [VerifyAccountController::class, 'verifyaccount'])->name('account.verifyaccount');
     Route::get('/member-login', [AuthController::class, 'login'])->name('member.login');
+    Route::get('/marketing', [MarketingController::class, 'index'])->name('marketing.index');
 /**/
 
     Route::get('/dashboard', function () { return view('dashboard');

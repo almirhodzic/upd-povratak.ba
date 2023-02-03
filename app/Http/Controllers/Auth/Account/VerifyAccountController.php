@@ -1,6 +1,6 @@
 <?php
 
-    namespace App\Http\Controllers\Auth\Member;
+    namespace App\Http\Controllers\Auth\Account;
 
     use App\Http\Controllers\Controller;
     use Illuminate\Support\Facades\Auth;
@@ -12,11 +12,10 @@
     use Config;
     use Hash;
     use Mail;
-    use App\Mail\VerifyEmailAdress;
 
-    class VerifyEmailController extends Controller
+    class VerifyAccountController extends Controller
     {
-        public function verifyemail(Member $member, $token)
+        public function verifyaccount(Member $member, $token)
         {
             $verifyMember = MemberVerify::where('token', $token)->first();
             $message = 'Aktivacijski link nije validan (404)';
@@ -85,8 +84,6 @@
                         $message->to($toEmail, $toName);
                         $message->subject($subject);
                     });
-
-                    new VerifyEmailAdress();
 
                     /*Mail::send('emails.notify.member.confirm-verification-html', $data, function($message) use ($toEmail, $toName, $fromEmail, $fromName, $subjectverification){
                         $message->from($fromEmail, $fromName);
