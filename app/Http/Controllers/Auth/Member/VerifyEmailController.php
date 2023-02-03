@@ -85,11 +85,11 @@
                         $message->subject($subject);
                     });
 
-                    Mail::send('emails.notify.member.confirm-verification-html', $data, function($message) use ($toEmail, $toName, $fromEmail, $fromName, $subjectverification){
+                    /*Mail::send('emails.notify.member.confirm-verification-html', $data, function($message) use ($toEmail, $toName, $fromEmail, $fromName, $subjectverification){
                         $message->from($fromEmail, $fromName);
                         $message->to($verifyMember->member->email, 'IME');
                         $message->subject($subjectverification);
-                    });
+                    });*/
 
 
                     // ------------------------------------------------------
