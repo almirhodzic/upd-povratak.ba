@@ -110,7 +110,7 @@
                         </h3>
                         <p>Majdančić Nihada</p>
                         <p>Tel. +387 35 367 735</p>
-                         <a>eMail: <a href="mailto:dijaspora@kalesija.ba" class="underline underline-offset-4">dijaspora@kalesija.ba</a></p>
+                         <p><a>eMail: <a href="mailto:dijaspora@kalesija.ba" class="underline underline-offset-4">dijaspora@kalesija.ba</a></p>
                         <p>75260 Kalesija BiH</p>
                         <p class="mt-3">
                            <a class="link flex items-center" href="https://www.facebook.com/profile.php?id=100087622836166" target="_blank">
