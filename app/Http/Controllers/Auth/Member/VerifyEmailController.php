@@ -55,6 +55,7 @@
                     $toName = 'Sekretariat '.Config::get('app.name');
                     $toEmail = Config::get('company.mail-office');
                     $subject = "Zahtjev za Članstvo ".Config::get('app.name')." (".$verifyMember->member->id.")";
+                    $subjectverification = "Email-adresa uspješno verificirana";
                     $apptimezone = Config::get('app.timezone');
 
                     $data = array(
@@ -84,10 +85,10 @@
                         $message->subject($subject);
                     });
 
-                    Mail::send('emails.notify.member.confirm-verification-html', $data, function($message) use ($toEmail, $toName, $fromEmail, $fromName, $subject){
+                    Mail::send('emails.notify.member.confirm-verification-html', $data, function($message) use ($toEmail, $toName, $fromEmail, $fromName, $subjectverification){
                         $message->from($fromEmail, $fromName);
-                        $message->to($toEmail, $toName);
-                        $message->subject($subject);
+                        $message->to($verifyMember->member->email, $verifyMember->member->name);
+                        $message->subject($subjectverification);
                     });
 
 
