@@ -16,9 +16,9 @@
             <li><a class="navi-item {{ Route::is('home.index') ? 'active': '' }}" href="{{ route('home.index') }}">Početna</a></li>
             <li><a class="navi-item {{ Route::is('statut.index') ? 'active': '' }}" href="{{ route('statut.index') }}">Statut</a></li>
             <li><a class="navi-item {{ Route::is('bank.index') ? 'active': '' }}" href="{{ route('bank.index') }}">Bankovni račun</a></li>
-            <li><a class="navi-item {{ Route::is('contact.index') ? 'active': '' }}" href="{{ route('contact.index') }}">Kontakt</a></li>
-            <li><a class="navi-item {{ Route::is('member.index') || Route::is('member.signup') ? 'active': '' }}" href="{{ route('member.index') }}">Članstvo</a></li>
             <li><a class="navi-item {{ Route::is('marketing.index') ? 'active': '' }}" href="{{ route('marketing.index') }}">Marketing</a></li>
+            <li><a class="navi-item {{ Route::is('member.index') || Route::is('member.signup') ? 'active': '' }}" href="{{ route('member.index') }}">Članstvo</a></li>
+            <li><a class="navi-item {{ Route::is('contact.index') ? 'active': '' }}" href="{{ route('contact.index') }}">Kontakt</a></li>
         </ul>
     </nav>
 </div>
