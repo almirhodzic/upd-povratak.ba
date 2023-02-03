@@ -90,7 +90,7 @@
                            Predsjednik Udruženja:
                         </h3>
                         <p>Ramić Osman</p>
-                         <p>eMail: <a href="mailto:o.ramix@gmx.ch" class="underline underline-offset-4">o.ramix@gmx.ch</a></p>
+                         <p>eMail: <a href="mailto:o.ramic@gmx.ch" class="underline underline-offset-4">o.ramic@gmx.ch</a></p>
                          <p>Tel. +41 76 322 89 23 (CH)</p>
                      </div>
 
