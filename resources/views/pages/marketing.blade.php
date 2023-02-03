@@ -26,7 +26,7 @@
       </div>
 
        <div>
-           <p>Za sve informacije vezano za reklamu ili marketing javite name se preko <a href="{{ route('contact.index') }}" class="link">Kontakt-forme</a>.</p>
+           <p>Informacije vezano za reklamu i marketing javite name se preko <a href="{{ route('contact.index') }}" class="link">Kontakt-forme</a>.</p>
        </div>
    </main>
 @endsection
