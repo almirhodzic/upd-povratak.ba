@@ -77,7 +77,7 @@ class MemberController extends Controller
             $fromEmail = Config::get('company.mail-sender');
             $toName = $request->name;
             $toEmail = $request->email;
-            $subject = "Vaš zahtjev za Članstvo";
+            $subject = "Zahtjev za Članstvo";
 
             $data = array(
                 'member_name' => $request->name,

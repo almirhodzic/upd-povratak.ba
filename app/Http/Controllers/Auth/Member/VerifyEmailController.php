@@ -78,8 +78,13 @@
                         'timezone' => $apptimezone
                     );
 
+                    Mail::send('emails.notify.admin.request-html', $data, function($message) use ($toEmail, $toName, $fromEmail, $fromName, $subject){
+                        $message->from($fromEmail, $fromName);
+                        $message->to($toEmail, $toName);
+                        $message->subject($subject);
+                    });
 
-                    Mail::send('emails.notify.member.request-html', $data, function($message) use ($toEmail, $toName, $fromEmail, $fromName, $subject){
+                    Mail::send('emails.notify.member.confirm-verification-html', $data, function($message) use ($toEmail, $toName, $fromEmail, $fromName, $subject){
                         $message->from($fromEmail, $fromName);
                         $message->to($toEmail, $toName);
                         $message->subject($subject);
