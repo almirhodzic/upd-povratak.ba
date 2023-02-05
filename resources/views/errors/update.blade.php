@@ -16,7 +16,7 @@
 
    <main id="content">
       <p class="mb-6">
-         Poštovani, naš web-sajt je u toku obradei uskoro će biti opet dostupan.
+         Poštovani, naš web-sajt je u toku obrade i uskoro će biti opet dostupan.
       </p>
       <p>
          Hvala za Vaše strpljenje!
