@@ -55,6 +55,7 @@ return [
     */
 
     'url' => env('APP_URL', 'https://upd-povratak.ba'),
+      'url_main' => env('APP_URLMAIN', 'https://upd-povratak.ba'),
     'facebook' => env('FB_URL', 'https://www.facebook.com/updpovratak'),
 
 

@@ -15,6 +15,7 @@
                     <x-z.nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-z.nav-link>
+                    <a href="/log-viewer" class="inline-flex items-center px-1 pt-1 border-b-2 border-indigo-400 text-sm font-medium leading-5 text-gray-900 focus:outline-none focus:border-indigo-700 transition duration-150 ease-in-out">Log-viewer</a>
                 </div>
             </div>
 
@@ -70,6 +71,7 @@
             <x-z.responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
             </x-z.responsive-nav-link>
+            <a href="/log-viewer" class="inline-flex items-center px-1 pt-1 border-b-2 border-indigo-400 text-sm font-medium leading-5 text-gray-900 focus:outline-none focus:border-indigo-700 transition duration-150 ease-in-out">Log-viewer</a>
         </div>
 
         <!-- Responsive Settings Options -->

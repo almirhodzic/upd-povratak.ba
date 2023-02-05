@@ -6,9 +6,9 @@
    </div>
    <!-- Page Heading -->
    <x-partials.header>
-      <x-slot name="currentpagename">Greška</x-slot>
+      <x-slot name="currentpagename">503</x-slot>
       <x-slot name="headertitle">
-         <span class="whitespace-nowrap">404</span>
+         <span class="whitespace-nowrap">Update u toku!</span>
       </x-slot>
       <x-slot name="headertitlesub"></x-slot>
    </x-partials.header>
@@ -16,11 +16,10 @@
 
    <main id="content">
       <p class="mb-6">
-         Sajt ili link nije pronađen ili ne funkcioniše kao očekivano.
+         Poštovani, naš web-sajt je u toku obradei uskoro će biti opet dostupan.
       </p>
-      <p>Vratite se <a href="{{ config('app.url_main') }}" class="link">početnu stranicu</a>.</p>
+      <p>
+         Hvala za Vaše strpljenje!
+      </p>
    </main>
 @endsection
-
-
-

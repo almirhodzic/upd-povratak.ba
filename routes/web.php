@@ -11,6 +11,7 @@ use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\Auth\Member\VerifyEmailController;
 use App\Http\Controllers\Auth\Account\VerifyAccountController;
 use App\Http\Controllers\MarketingController;
+use App\Http\Controllers\ErrorController;
 
 /*
 |--------------------------------------------------------------------------
@@ -81,12 +82,8 @@ Route::prefix('/artisan')->group(function () {
         $exitCode = Artisan::call('down --secret="4965274a-183b-3b71-afa8-dd65a1c98273" --render="errors/maintenance"');
         return redirect()->back();
     });
-    Route::get('/site-process', function() {
-        $exitCode = Artisan::call('down --secret="4965274a-183b-3b71-afa8-dd65a1c98273" --render="errors/process"');
-        return redirect()->back();
-    });
-    Route::get('/site-offline', function() {
-        $exitCode = Artisan::call('down --secret="4965274a-183b-3b71-afa8-dd65a1c98273" --render="errors/offline"');
+    Route::get('/site-update', function() {
+        $exitCode = Artisan::call('down --secret="4965274a-183b-3b71-afa8-dd65a1c98273" --render="errors/update"');
         return redirect()->back();
     });
 });

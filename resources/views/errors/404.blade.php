@@ -18,9 +18,7 @@
       <p class="mb-6">
          Sajt ili link nije pronađen ili ne funkcioniše kao očekivano.
       </p>
-      <p>Vratite se <a href="{{ config('app.url_main') }}" class="link">početnu stranicu</a>.</p>
+      <p>Vratite se <span onclick="window.history.go(-1); return false;" class="underline underline-offset-4" role="button">nazad</span>.</p>
    </main>
 @endsection
-
-
 
