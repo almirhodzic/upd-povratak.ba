@@ -52,27 +52,41 @@ Route::middleware('auth')->group(function () {
 
 require __DIR__.'/auth.php';
 
-   Route::get('/artisan/config-cache', function() {
-      $exitCode = Artisan::call('config:cache');
-      return redirect()->back();
-   });
-   Route::get('/artisan/optimize', function() {
-      $exitCode = Artisan::call('optimize');
-      return redirect()->back();
-   });
-   Route::get('/artisan/view-clear', function() {
-      $exitCode = Artisan::call('view:clear');
-      return redirect()->back();
-   });
-   Route::get('/artisan/route-clear', function() {
-      $exitCode = Artisan::call('route:clear');
-      return redirect()->back();
-   });
-   Route::get('/artisan/clear-cache', function() {
-      $exitCode = Artisan::call('cache:clear');
-      return redirect()->back();
-   });
-   Route::get('/artisan/migrate', function() {
-      $exitCode = Artisan::call('migrate', ["--force" => true ]);
-      return redirect()->back();
-   });
+Route::prefix('/artisan')->group(function () {
+    Route::get('/config-cache', function() {
+        $exitCode = Artisan::call('config:cache');
+        return redirect()->back();
+    });
+    Route::get('/optimize', function() {
+        $exitCode = Artisan::call('optimize');
+        return redirect()->back();
+    });
+    Route::get('/view-clear', function() {
+        $exitCode = Artisan::call('view:clear');
+        return redirect()->back();
+    });
+    Route::get('/route-clear', function() {
+        $exitCode = Artisan::call('route:clear');
+        return redirect()->back();
+    });
+    Route::get('/clear-cache', function() {
+        $exitCode = Artisan::call('cache:clear');
+        return redirect()->back();
+    });
+    Route::get('/site-up', function() {
+        $exitCode = Artisan::call('up');
+        return redirect()->back();
+    });
+    Route::get('/site-down', function() {
+        $exitCode = Artisan::call('down --secret="4965274a-183b-3b71-afa8-dd65a1c98273" --render="errors/maintenance"');
+        return redirect()->back();
+    });
+    Route::get('/site-process', function() {
+        $exitCode = Artisan::call('down --secret="4965274a-183b-3b71-afa8-dd65a1c98273" --render="errors/process"');
+        return redirect()->back();
+    });
+    Route::get('/site-offline', function() {
+        $exitCode = Artisan::call('down --secret="4965274a-183b-3b71-afa8-dd65a1c98273" --render="errors/offline"');
+        return redirect()->back();
+    });
+});
