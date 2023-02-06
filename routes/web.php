@@ -86,4 +86,8 @@ Route::prefix('/artisan')->group(function () {
         $exitCode = Artisan::call('down --secret="4965274a-183b-3b71-afa8-dd65a1c98273" --render="errors/update"');
         return redirect()->back();
     });
+   Route::get('/site-offline', function() {
+      $exitCode = Artisan::call('down --secret="4965274a-183b-3b71-afa8-dd65a1c98273" --render="errors/offline"');
+      return redirect()->back();
+   });
 });
