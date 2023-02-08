@@ -17,7 +17,7 @@
    <p>
       {{ config('company.namefull') }} je osnovano 04.08.2022. godine.
    </p>
-      <p class="mb-6">Slijedi galerija osnivačke skupštine {{ config('app.name') }}. (Uskoro sa više fotografija)</p>
+      <p class="mb-6">Slijedi galerija osnivačke skupštine. (Uskoro sa više fotografija)</p>
          <div class="gallery grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-8">
          @foreach($files as $file)
             <div class="bg-blue-400">
