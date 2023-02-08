@@ -12,7 +12,7 @@ use App\Http\Controllers\Auth\Member\VerifyEmailController;
 use App\Http\Controllers\Auth\Account\VerifyAccountController;
 use App\Http\Controllers\MarketingController;
 use App\Http\Controllers\ErrorController;
-
+use App\Http\Controllers\AboutController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -40,6 +40,7 @@ use App\Http\Controllers\ErrorController;
     Route::get('/account/verify/{token}', [VerifyAccountController::class, 'verifyaccount'])->name('account.verifyaccount');
     Route::get('/member-login', [AuthController::class, 'login'])->name('member.login');
     Route::get('/marketing', [MarketingController::class, 'index'])->name('marketing.index');
+   Route::get('/o-nama', [AboutController::class, 'index'])->name('about.index');
 /**/
 
     Route::get('/dashboard', function () { return view('dashboard');

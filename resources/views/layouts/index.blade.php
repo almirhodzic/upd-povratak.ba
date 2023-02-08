@@ -6,12 +6,19 @@
 <meta name="csrf-token" content="{{ csrf_token() }}">
 
 <title>{{ config('app.name', 'Laravel') }}</title>
-
 <!-- Fonts -->
 <x-partials.font />
-
+    <link rel="stylesheet" href="{{asset('static/assets/js/lightbox/lightbox.min.css')}}">
+    <script src="{{ asset('static/assets/js/lightbox/lightbox-plus-jquery.min.js')  }}"></script>
+    <script>
+        lightbox.option({
+            'resizeDuration': 100,
+            'wrapAround': true,
+            'alwaysShowNavOnTouchDevices':true,
+            'albumLabel':"Slika %1 od %2"
+        })
+    </script>
 <!-- Scripts -->
-<script src="./node_modules/preline/dist/preline.js"></script>
 @vite([
     'resources/css/app.css',
     'resources/js/app.js'
@@ -40,5 +47,8 @@
 </div>
 <!-- End Content -->
 <!-- ========== END MAIN CONTENT ========== -->
+<script>
+    let gallery = new SimpleLightbox('.gallery a');
+</script>
 </body>
 </html>

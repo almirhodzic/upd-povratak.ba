@@ -1,22 +1,30 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-1beb39ef.css",
+    "file": "assets/app-acd5843e.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
-  "_preline-a6a33380.js": {
-    "file": "assets/preline-a6a33380.js",
+  "_lightbox-adc0bc12.js": {
+    "file": "assets/lightbox-adc0bc12.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js"
+    ]
+  },
+  "_preline-0e1fd4cc.js": {
+    "file": "assets/preline-0e1fd4cc.js",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js"
     ]
   },
   "resources/js/app.js": {
-    "file": "assets/app-d5076612.js",
+    "file": "assets/app-8d54398c.js",
     "src": "resources/js/app.js",
     "isEntry": true,
     "dynamicImports": [
-      "_preline-a6a33380.js"
+      "_preline-0e1fd4cc.js",
+      "_lightbox-adc0bc12.js"
     ]
   }
 }

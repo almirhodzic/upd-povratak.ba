@@ -14,6 +14,7 @@
     <nav class="hs-accordion-group p-6 w-full flex flex-col flex-wrap" data-hs-accordion-always-open>
         <ul class="space-y-1.5">
             <li><a class="navi-item {{ Route::is('home.index') ? 'active': '' }}" href="{{ route('home.index') }}">Početna</a></li>
+            <li><a class="navi-item {{ Route::is('about.index') ? 'active': '' }}" href="{{ route('about.index') }}">O nama</a></li>
             <li><a class="navi-item {{ Route::is('statut.index') ? 'active': '' }}" href="{{ route('statut.index') }}">Statut</a></li>
             <li><a class="navi-item {{ Route::is('bank.index') ? 'active': '' }}" href="{{ route('bank.index') }}">Bankovni račun</a></li>
             <li><a class="navi-item {{ Route::is('marketing.index') ? 'active': '' }}" href="{{ route('marketing.index') }}">Marketing</a></li>
