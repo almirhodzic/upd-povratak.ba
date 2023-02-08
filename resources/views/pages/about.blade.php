@@ -20,9 +20,9 @@
       <p class="mb-6">Slijedi galerija osnivačke skupštine. (Uskoro sa više fotografija)</p>
          <div class="gallery grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-8">
          @foreach($files as $file)
-            <div class="bg-blue-400 rounded-xl">
+            <div class="bg-blue-400 rounded-md">
             <a href="{{asset('gallery/about').'/'.basename($file)}}" data-lightbox="about" data-title="Osnivačka Skupština">
-               <img class="object-cover h-full w-auto rounded-xl" src="{{$file}}" alt="image">
+               <img class="object-cover h-full w-auto rounded-md transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 hover:shadow-xl duration-200" src="{{$file}}" alt="image">
             </a>
             </div>
          @endforeach
