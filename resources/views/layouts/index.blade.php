@@ -42,9 +42,9 @@
     @if (app()->isDownForMaintenance())
         <div class="p-4 bg-pink-600 text-white flex items-center w-full rounded-md mb-6">Site is in maintenance mode!</div>
     @endif
-    <div class="grid justify-items-center w-full mb-6 md:hidden">
+    <div class="grid justify-items-center w-full mb-2 md:hidden">
     <a href="{{ config('app.url') }}">
-        <img src="{{ asset('static/assets/img/logo-upd.povratak.ba.png') }}" class="object-scale-down h-36 w-36" alt="Logo {{ config('app.name') }} BiH">
+        <img src="{{ asset('static/assets/img/logo-upd.povratak.ba.png') }}" class="object-scale-down h-48 w-48" alt="Logo {{ config('app.name') }} BiH">
     </a>
     </div>
     @yield('content')
